@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chainlit-app
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "chainlit run app.py --port 10000 --host 0.0.0.0"
+    envVars:
+      - key: GOOGLE_API_KEY
+        value: AIzaSyCTjRUJl8z3gnXktfIGbeHYM8Fxd_WImm8
